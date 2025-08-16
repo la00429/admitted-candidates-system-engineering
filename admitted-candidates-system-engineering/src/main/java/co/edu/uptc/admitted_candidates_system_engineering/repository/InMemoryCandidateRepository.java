@@ -12,7 +12,7 @@ import java.util.List;
  * Aplica principio Loose Coupling: Implementa la interfaz sin depender de clases específicas.
  */
 @Repository
-public class InMemoryCandidateRepository implements CandidateRepository {
+public class InMemoryCandidateRepository implements ICandidateRepository {
     
     private final List<Candidate> candidates;
     

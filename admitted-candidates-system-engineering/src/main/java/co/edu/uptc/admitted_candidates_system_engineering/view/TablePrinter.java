@@ -11,7 +11,7 @@ import java.util.List;
  * Aplica principio YAGNI: Solo funcionalidad de impresión requerida.
  */
 @Component
-public class TablePrinter {
+public class TablePrinter implements ITablePrinter {
     
     private static final String SEPARATOR = "+" + "-".repeat(100) + "+";
     private static final String HEADER_FORMAT = "| %-4s | %-20s | %-20s | %-12s | %-8s | %-8s | %-15s |";
@@ -25,7 +25,7 @@ public class TablePrinter {
      */
     public void printTable(List<Candidate> candidates) {
         if (candidates == null || candidates.isEmpty()) {
-            System.out.println("\n❌ No hay candidatos para mostrar.");
+            System.out.println("\n| No hay candidatos para mostrar.");
             return;
         }
         
@@ -40,7 +40,7 @@ public class TablePrinter {
      */
     private void printHeader() {
         System.out.println("\n" + "=".repeat(110));
-        System.out.println("                    📊 CANDIDATOS ADMITIDOS - INGENIERÍA DE SISTEMAS 2025-1");
+        System.out.println("                     CANDIDATOS ADMITIDOS - INGENIERÍA DE SISTEMAS 2025-1");
         System.out.println("=".repeat(110));
         System.out.println(SEPARATOR);
         System.out.printf(HEADER_FORMAT, 
@@ -95,12 +95,12 @@ public class TablePrinter {
             
         System.out.println(SEPARATOR);
         System.out.printf("| %-96s |\n", 
-            String.format("📈 Total de candidatos admitidos: %d", candidates.size()));
+            String.format("| Total de candidatos admitidos: %d", candidates.size()));
         System.out.printf("| %-96s |\n", 
-            String.format("🏛️  Candidatos de comunidades minoritarias: %d", minorityCandidates));
+            String.format("|  Candidatos de comunidades minoritarias: %d", minorityCandidates));
         System.out.printf("| %-96s |\n", "* = Candidato de comunidad minoritaria");
         System.out.println(SEPARATOR);
-        System.out.println("✅ Tabla generada exitosamente\n");
+        System.out.println("| Tabla generada exitosamente\n");
     }
     
     /**

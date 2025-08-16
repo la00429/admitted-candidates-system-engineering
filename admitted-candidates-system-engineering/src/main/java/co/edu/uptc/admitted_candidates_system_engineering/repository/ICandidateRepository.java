@@ -9,7 +9,7 @@ import java.util.List;
  * Define contrato sin implementación específica.
  * Aplica principio Loose Coupling: Permite intercambiar implementaciones.
  */
-public interface CandidateRepository {
+public interface ICandidateRepository {
     
     /**
      * Añade un candidato al repositorio.
