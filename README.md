@@ -43,8 +43,6 @@
 ### RESULTADO ESPERADO
 La aplicación mostrará:
 1. Tabla de candidatos ordenados
-2. Estadísticas del proceso de admisión
-3. Indicadores para comunidades minoritarias (*)
 
 ### COMANDOS ADICIONALES
 - Ejecutar solo tests: ./mvnw test
