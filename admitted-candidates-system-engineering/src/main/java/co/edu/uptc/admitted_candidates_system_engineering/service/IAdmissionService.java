@@ -24,13 +24,6 @@ public interface IAdmissionService {
      */
     List<Candidate> processAdmittedCandidates();
     
-    /**
-     * Genera estadísticas del proceso de admisión.
-     * 
-     * @param candidates lista de candidatos procesados
-     * @return objeto con estadísticas del proceso
-     */
-    AdmissionStatistics generateStatistics(List<Candidate> candidates);
     
     /**
      * Obtiene el total de candidatos cargados en el sistema.

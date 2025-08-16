@@ -1,11 +1,10 @@
 package co.edu.uptc.admitted_candidates_system_engineering.controller;
 
 import co.edu.uptc.admitted_candidates_system_engineering.model.Candidate;
-import co.edu.uptc.admitted_candidates_system_engineering.service.AdmissionStatistics;
 import co.edu.uptc.admitted_candidates_system_engineering.service.IAdmissionService;
 import co.edu.uptc.admitted_candidates_system_engineering.view.ITablePrinter;
-import co.edu.uptc.admitted_candidates_system_engineering.view.IStatisticsPrinter;
 import org.springframework.beans.factory.annotation.Autowired;
+import co.edu.uptc.admitted_candidates_system_engineering.view.IMessagePrinter;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -21,15 +20,15 @@ public class AdmissionController {
     
     private final IAdmissionService admissionService;
     private final ITablePrinter tablePrinter;
-    private final IStatisticsPrinter statisticsPrinter;
+    private final IMessagePrinter messagePrinter;
     
     @Autowired
     public AdmissionController(IAdmissionService admissionService,
                               ITablePrinter tablePrinter,
-                              IStatisticsPrinter statisticsPrinter) {
+                              IMessagePrinter messagePrinter) {
         this.admissionService = admissionService;
         this.tablePrinter = tablePrinter;
-        this.statisticsPrinter = statisticsPrinter;
+        this.messagePrinter = messagePrinter;
     }
     
     /**
@@ -40,18 +39,12 @@ public class AdmissionController {
         try {
             // 1. Inicializar sistema
             printSystemStart();
-            admissionService.initializeSystem();
-            printDataLoadSuccess();
-            
+            admissionService.initializeSystem();            
             // 2. Procesar candidatos
             List<Candidate> admittedCandidates = admissionService.processAdmittedCandidates();
             
             // 3. Mostrar resultados
             tablePrinter.printTable(admittedCandidates);
-            
-            // 4. Mostrar estadísticas
-            AdmissionStatistics statistics = admissionService.generateStatistics(admittedCandidates);
-            statisticsPrinter.printStatistics(statistics);
             
             // 5. Finalizar
             printSystemSuccess();
@@ -62,21 +55,15 @@ public class AdmissionController {
     }
     
     private void printSystemStart() {
-        System.out.println(" Iniciando Sistema de Candidatos Admitidos...");
-        System.out.println(" Cargando datos de candidatos...");
-    }
-    
-    private void printDataLoadSuccess() {
-        System.out.printf(" Se cargaron %d candidatos exitosamente.%n", 
-                         admissionService.getTotalCandidates());
+        messagePrinter.printSystemStart();
+
     }
     
     private void printSystemSuccess() {
-        System.out.println("| Sistema ejecutado exitosamente.");
+        messagePrinter.printSystemSuccess();
     }
     
     private void printSystemError(Exception e) {
-        System.err.println("| Error al ejecutar la aplicación: " + e.getMessage());
-        e.printStackTrace();
+        messagePrinter.printSystemError(e);
     }
 }

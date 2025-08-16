@@ -21,11 +21,6 @@ public class MessagePrinter implements IMessagePrinter {
     }
     
     @Override
-    public void printDataLoadSuccess(int candidateCount) {
-        System.out.printf(" Se cargaron %d candidatos exitosamente.%n", candidateCount);
-    }
-    
-    @Override
     public void printSystemSuccess() {
         System.out.println("| Sistema ejecutado exitosamente.");
     }

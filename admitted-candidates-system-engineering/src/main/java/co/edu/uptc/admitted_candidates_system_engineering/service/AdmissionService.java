@@ -50,11 +50,6 @@ public class AdmissionService implements IAdmissionService {
     }
     
     @Override
-    public AdmissionStatistics generateStatistics(List<Candidate> candidates) {
-        return new AdmissionStatistics(candidates);
-    }
-    
-    @Override
     public int getTotalCandidates() {
         return candidateRepository.getTotalCandidates();
     }

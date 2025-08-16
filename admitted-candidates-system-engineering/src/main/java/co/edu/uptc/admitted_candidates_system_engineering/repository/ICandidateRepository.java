@@ -28,7 +28,7 @@ public interface ICandidateRepository {
     /**
      * Obtiene el número total de candidatos.
      * 
-     * @return cantidad de candidatos almacenados
+     * @return número total de candidatos en el repositorio
      */
     int getTotalCandidates();
 }

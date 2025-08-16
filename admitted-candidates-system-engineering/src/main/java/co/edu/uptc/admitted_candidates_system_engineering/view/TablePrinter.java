@@ -94,12 +94,6 @@ public class TablePrinter implements ITablePrinter {
             .sum();
             
         System.out.println(SEPARATOR);
-        System.out.printf("| %-96s |\n", 
-            String.format("| Total de candidatos admitidos: %d", candidates.size()));
-        System.out.printf("| %-96s |\n", 
-            String.format("|  Candidatos de comunidades minoritarias: %d", minorityCandidates));
-        System.out.printf("| %-96s |\n", "* = Candidato de comunidad minoritaria");
-        System.out.println(SEPARATOR);
         System.out.println("| Tabla generada exitosamente\n");
     }
     

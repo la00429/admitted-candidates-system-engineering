@@ -18,13 +18,6 @@ public interface IMessagePrinter {
     void printDataLoading();
     
     /**
-     * Muestra mensaje de éxito en carga de datos.
-     * 
-     * @param candidateCount número de candidatos cargados
-     */
-    void printDataLoadSuccess(int candidateCount);
-    
-    /**
      * Muestra mensaje de éxito del sistema.
      */
     void printSystemSuccess();
