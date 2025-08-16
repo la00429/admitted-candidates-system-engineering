@@ -8,7 +8,7 @@
 
 #### Opción 1: Con Maven Wrapper (Recomendado)
 1. Ir al directorio del proyecto:
-   cd /home/alex/repos/laura/taller2-Sesion3/admitted-candidates-system-engineering/admitted-candidates-system-engineering
+   cd /admitted-candidates-system-engineering/admitted-candidates-system-engineering
 
 2. Compilar el proyecto:
    ./mvnw clean compile
@@ -18,7 +18,7 @@
 
 #### Opción 2: Con Maven instalado
 1. Ir al directorio del proyecto:
-   cd /home/alex/repos/laura/taller2-Sesion3/admitted-candidates-system-engineering/admitted-candidates-system-engineering
+   cd /admitted-candidates-system-engineering/admitted-candidates-system-engineering
 
 2. Compilar el proyecto:
    mvn clean compile
@@ -28,7 +28,7 @@
 
 #### Opción 3: Ejecutar el JAR compilado
 1. Ir al directorio del proyecto:
-   cd /home/alex/repos/laura/taller2-Sesion3/admitted-candidates-system-engineering/admitted-candidates-system-engineering
+   cd /admitted-candidates-system-engineering/admitted-candidates-system-engineering
 
 2. Compilar y empaquetar:
    ./mvnw clean package
