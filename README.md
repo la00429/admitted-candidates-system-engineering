@@ -1,6 +1,3 @@
-Aquí tienes el texto en formato plano, listo para que lo copies.
-
-```
 ## CÓMO EJECUTAR EL PROYECTO - SISTEMA DE CANDIDATOS ADMITIDOS
 
 ### REQUISITOS PREVIOS
@@ -58,4 +55,3 @@ La aplicación mostrará:
 - Si no funciona ./mvnw, usar: chmod +x mvnw
 - Si falta Java, instalar OpenJDK 17 o superior
 - Si hay errores de compilación, verificar que todas las dependencias estén en pom.xml
-```
