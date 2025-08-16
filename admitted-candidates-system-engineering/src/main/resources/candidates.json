@@ -1,0 +1,137 @@
+[
+  {
+    "name": "María Fernanda",
+    "lastName": "González Rodríguez",
+    "ethnicity": "Indígena Wayuu",
+    "globalIcfesScore": 385,
+    "registrationDate": "2024-10-15",
+    "mathScore": 92,
+    "englishScore": 88
+  },
+  {
+    "name": "Carlos Andrés",
+    "lastName": "Martínez López",
+    "ethnicity": "General",
+    "globalIcfesScore": 390,
+    "registrationDate": "2024-10-12",
+    "mathScore": 90,
+    "englishScore": 85
+  },
+  {
+    "name": "Ana Lucía",
+    "lastName": "Vargas Castillo",
+    "ethnicity": "Afrocolombiano",
+    "globalIcfesScore": 375,
+    "registrationDate": "2024-10-18",
+    "mathScore": 88,
+    "englishScore": 90
+  },
+  {
+    "name": "Diego Fernando",
+    "lastName": "Silva Herrera",
+    "ethnicity": "General",
+    "globalIcfesScore": 395,
+    "registrationDate": "2024-10-10",
+    "mathScore": 95,
+    "englishScore": 87
+  },
+  {
+    "name": "Laura Valentina",
+    "lastName": "Moreno Jiménez",
+    "ethnicity": "General",
+    "globalIcfesScore": 390,
+    "registrationDate": "2024-10-14",
+    "mathScore": 93,
+    "englishScore": 89
+  },
+  {
+    "name": "Juan Sebastián",
+    "lastName": "Rodríguez Peña",
+    "ethnicity": "General",
+    "globalIcfesScore": 380,
+    "registrationDate": "2024-10-16",
+    "mathScore": 87,
+    "englishScore": 86
+  },
+  {
+    "name": "Camila Andrea",
+    "lastName": "López Torres",
+    "ethnicity": "Rom",
+    "globalIcfesScore": 370,
+    "registrationDate": "2024-10-20",
+    "mathScore": 85,
+    "englishScore": 88
+  },
+  {
+    "name": "Andrés Felipe",
+    "lastName": "García Muñoz",
+    "ethnicity": "General",
+    "globalIcfesScore": 385,
+    "registrationDate": "2024-10-13",
+    "mathScore": 89,
+    "englishScore": 84
+  },
+  {
+    "name": "Sofía Isabel",
+    "lastName": "Hernández Cruz",
+    "ethnicity": "General",
+    "globalIcfesScore": 390,
+    "registrationDate": "2024-10-11",
+    "mathScore": 90,
+    "englishScore": 85
+  },
+  {
+    "name": "Alejandro José",
+    "lastName": "Ramírez Vega",
+    "ethnicity": "Indígena Emberá",
+    "globalIcfesScore": 365,
+    "registrationDate": "2024-10-19",
+    "mathScore": 83,
+    "englishScore": 82
+  },
+  {
+    "name": "Valeria Nicole",
+    "lastName": "Restrepo Ospina",
+    "ethnicity": "General",
+    "globalIcfesScore": 395,
+    "registrationDate": "2024-10-09",
+    "mathScore": 94,
+    "englishScore": 91
+  },
+  {
+    "name": "Santiago David",
+    "lastName": "Mejía Cardona",
+    "ethnicity": "General",
+    "globalIcfesScore": 385,
+    "registrationDate": "2024-10-17",
+    "mathScore": 92,
+    "englishScore": 85
+  },
+  {
+    "name": "Isabella María",
+    "lastName": "Castro Delgado",
+    "ethnicity": "Palenquero",
+    "globalIcfesScore": 360,
+    "registrationDate": "2024-10-21",
+    "mathScore": 80,
+    "englishScore": 85
+  },
+  {
+    "name": "Nicolás Alberto",
+    "lastName": "Aguilar Montoya",
+    "ethnicity": "General",
+    "globalIcfesScore": 390,
+    "registrationDate": "2024-10-08",
+    "mathScore": 88,
+    "englishScore": 92
+  },
+  {
+    "name": "Daniela Alejandra",
+    "lastName": "Pineda Ruiz",
+    "ethnicity": "General",
+    "globalIcfesScore": 375,
+    "registrationDate": "2024-10-22",
+    "mathScore": 86,
+    "englishScore": 83
+  }
+]
